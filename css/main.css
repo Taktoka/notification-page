@@ -1,0 +1,157 @@
+:root {
+  --color: hsl(228, 45%, 44%);
+  --red: hsl(1, 90%, 64%);
+  --blue: hsl(219, 85%, 26%);
+  --white: hsl(0, 0%, 100%);
+  --very-light-grayish-blue: hsl(210, 60%, 98%);
+  --light-grayish-blue1: hsl(211, 68%, 94%);
+  --light-grayish-blue2: hsl(205, 33%, 90%);
+  --grayish--blue: hsl(219, 14%, 63%);
+  --dark-grayish-blue: hsl(219, 12%, 42%);
+  --very-dark-blue: hsl(224, 21%, 14%);
+}
+body {
+  font-size: 11px;
+  padding: 0;
+  margin: 0;
+  font-family: "Plus Jakarta Sans";
+  background-color: var(--light-grayish-blue1);
+}
+.contents {
+  width: 700px;
+  margin: 20px auto;
+  background-color: var(--white);
+  padding: 20px;
+  border-radius: 7px;
+}
+.contents img {
+  width: 70px;
+  margin-right: 10px;
+}
+
+.member .chess {
+  width: 55px;
+  position: absolute;
+  top: 36%;
+  right: 20px;
+}
+.main-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  line-height: 0;
+}
+.main-head h2 {
+  color: var(--very-dark-blue);
+}
+.main-head span {
+  background-color: var(--blue);
+  color: var(--white);
+  padding: 3px 7px;
+  font-size: 14px;
+  border-radius: 5px;
+  margin-left: 10px;
+}
+.main-head h5 {
+  color: var(--dark-grayish-blue);
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 10px;
+}
+.main-head h5:hover {
+  color: var(--blue);
+}
+.list .member {
+  position: relative;
+  display: flex;
+  background-color: var(--white);
+  padding: 10px;
+  border-radius: 7px;
+  margin-top: 10px;
+  align-items: center;
+  justify-content: flex-start;
+  cursor: pointer;
+}
+.info .text {
+  display: table;
+  color: var(--dark-grayish-blue);
+  position: relative;
+  font-size: 15px;
+  margin-bottom: 3px;
+}
+.info .text span {
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 14px;
+  transition: 0.3s;
+}
+.info .text .point {
+  width: 8px;
+  height: 8px;
+  display: inline-block;
+  border-radius: 50%;
+  background-color: var(--red);
+  margin-left: 5px;
+}
+.info .text .name {
+  color: black;
+}
+.info .text .note {
+  color: var(--dark-grayish-blue);
+}
+.info .text .club {
+  color: var(--blue);
+}
+.info .text .note:hover,
+.info .text .name:hover {
+  color: var(--blue);
+}
+.info .time {
+  color: var(--grayish--blue);
+  cursor: auto;
+  display: block;
+  font-weight: normal;
+}
+.member.active {
+  background-color: var(--light-grayish-blue1);
+}
+
+.list .msg {
+  border: 1px solid var(--light-grayish-blue1);
+  padding: 20px;
+  font-size: 15px;
+  color: var(--dark-grayish-blue);
+  box-shadow: 0 0 10px #f6f6f6;
+  margin-left: 78px;
+  line-height: 1.5;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.list .msg:hover {
+  background-color: var(--light-grayish-blue2);
+}
+@media (max-width: 576px) {
+  .contents {
+    width: 350px;
+    padding: 10px;
+  }
+  .member {
+    padding: 5px;
+  }
+  .contents img {
+    width: 50px;
+  }
+  .member .chess {
+    width: 40px;
+    right: 4px;
+  }
+  .info .text {
+    font-size: 14px;
+    width: 240px;
+  }
+  .list .msg {
+    margin-top: 10px;
+    width: 200px;
+  }
+}
